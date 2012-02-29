@@ -40,3 +40,6 @@ class Status(models.Model):
 
     # the status of the site
     status = models.CharField(max_length=200)
+
+    def __unicode__(self):
+        return self.description
