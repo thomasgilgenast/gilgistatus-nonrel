@@ -2,6 +2,9 @@ from django.db import models
 
 # Create your models here.
 class Status(models.Model):
+    class Meta:
+        verbose_name_plural = 'statuses'
+    
     # short description of the site
     description = models.CharField(max_length=200)
 
