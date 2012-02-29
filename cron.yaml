@@ -1,1 +1,4 @@
 cron:
+- description: update status
+  url: /update/
+  schedule: every 1 mins
