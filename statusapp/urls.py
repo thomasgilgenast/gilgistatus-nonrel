@@ -5,7 +5,7 @@ from statusapp.models import Status
 urlpatterns = patterns('statusapp.views',
     url('^$',
         ListView.as_view(
-            queryset=Status.objects.all(),
+            queryset=Status.objects.all().order_by('link_text'),
             context_object_name='statuses',
             template_name='index.html')),
     url('^update/$', 'update')
