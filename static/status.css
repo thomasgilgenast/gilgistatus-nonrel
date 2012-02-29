@@ -1,0 +1,41 @@
+body {
+    background-color:black;
+}
+
+table {
+    border-collapse:collapse;
+}
+
+table, th, td {
+    border: 1px solid white;
+    padding:5px;
+}
+
+a, h1, th, td, p {
+    font-family:monospace;
+    color:white;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    color:blue;
+}
+
+tr.header {
+    font-weight:bold;
+}
+
+td.online {
+    background-color:green;
+}
+
+td.offline {
+    background-color:red;
+}
+
+td.unknown {
+    background-color:9900CC;
+}
