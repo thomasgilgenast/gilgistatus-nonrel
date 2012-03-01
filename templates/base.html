@@ -1,11 +1,15 @@
 <html>
 <head>
 <title>{% block title %}{% endblock %}</title>
+{% block css %}
 <link rel="stylesheet" type="text/css" href="static/status.css"/>
+{% endblock %}
 </head>
 <body>
 {% block content %}{% endblock %}
+{% block footer %}
 <hr/>
 <p>site theme &copy; 2012 gilgi</p>
+{% endblock %}
 </body>
 </html>
